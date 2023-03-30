@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <script src="main_script.js"></script>
+        <title>Task</title>
+    </head>
+
+    <body>
+        <h1>Calculation for Planetary Motion (Kepler's Law)</h1>
+        <div id="form_div">
+            <form id="data">
+                <table>
+                    <tr>
+                        <td><label for="radius">Radius</label></td>
+                        <td><input type="number" id="radius" name="radius"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mass">Mass of Object at Center</label></td>
+                        <td><input type="number" id="mass" name="mass"></td>
+                    </tr>
+
+                    <tr>
+                        <td><button type="button" onclick="cal_data()">Calculate</button></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <br>
+        <div id="ans_div">
+            <table>
+                <tr>
+                    <td>Orbital Period: </td>
+                    <td id="orb_per"></td>
+                    <td>s</td>
+                </tr>
+                <tr>
+                    <td>Orbital Velocity: </td>
+                    <td id="orb_vel"></td>
+                    <td>m/s</td>
+                </tr>
+                <tr>
+                    <td>Orbital Acceleration: </td>
+                    <td id="orb_acc"></td>
+                    <td>m/s<sup>2</sup></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
